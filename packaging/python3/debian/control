@@ -1,0 +1,22 @@
+Source: py-smbus
+Maintainer: Rogue Marechal <hal@pimoroni.com>
+Homepage: http://www.lm-sensors.org
+Section: python
+Priority: optional
+Build-Depends: debhelper (>= 9.0.0), dh-python, python3-all (>= 3.2), python3-setuptools
+Standards-Version: 3.9.4
+X-Python3-Version: >= 3.2
+
+Package: python3-smbus1
+Architecture: any
+Section: python
+Depends: ${shlibs:Depends}, ${python:Depends}, ${misc:Depends}
+Provides: ${python:Provides}
+Conflicts: python3-smbus
+Recommends: i2c-tools
+Description: Python 3 bindings for Linux SMBus access through i2c-dev 
+ This Python module allows SMBus access through the I2C /dev interface on 
+ Linux hosts.  The host kernel must have I2C support, I2C device interface
+ support, and a bus adapter driver.
+ .
+ This is the Python 3 version of the package.
