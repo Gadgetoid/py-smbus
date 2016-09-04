@@ -19,7 +19,7 @@ fi
 cd ../../library && debuild
 
 for file in ${pkgfiles[@]}; do
-    mv ../*.$file ../../packaging &> /dev/null
+    mv ../*.$file ../packaging/python3 &> /dev/null
 done
 
 if [ $cleanup == "yes" ]; then
