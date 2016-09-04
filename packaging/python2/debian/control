@@ -3,9 +3,9 @@ Maintainer: Rogue Marechal <hal@pimoroni.com>
 Homepage: http://www.lm-sensors.org
 Section: python
 Priority: optional
-Build-Depends: debhelper (>= 9.0.0), dh-python, python2.6-dev, python-setuptools
+Build-Depends: debhelper (>= 9.0.0), dh-python, python-dev, python-setuptools
 Standards-Version: 3.9.4
-X-Python-Version: 2.6
+X-Python-Version: 2.7
 
 Package: python-smbus1
 Architecture: any
