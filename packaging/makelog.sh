@@ -11,6 +11,7 @@ cat $mainlog > $debianlog
 
 # generate pypi changelog
 
+<< DISABLED
 sed -e "/--/d" -e "s/  \*/\*/" \
     -e "s/.*\([0-9].[0-9].[0-9]\).*/\1/" \
     -e '/[0-9].[0-9].[0-9]/ a\
@@ -18,5 +19,6 @@ sed -e "/--/d" -e "s/  \*/\*/" \
 
 version=$(head -n 1 $pypilog)
 sed -i "s/[0-9].[0-9].[0-9]/$version/" $setupfile
+DISABLED
 
 exit 0
