@@ -8,4 +8,4 @@ export DH_OPTIONS
 	dh $@ --with python2 --no-guessing-versions --buildsystem=python_distutils
 
 override_dh_auto_install:
-	python setup.py install --root debian/python-smbus-cpython --install-layout=deb
+	python setup.py install --root debian/python-smbus1 --install-layout=deb
