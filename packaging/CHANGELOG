@@ -1,4 +1,4 @@
-py-smbus (1.1.0-1) UNRELEASED; urgency=medium
+py-smbus (1.1.0+32m) UNRELEASED; urgency=medium
 
   * Repackaged upstream sources
   * Non-maintainer upload
