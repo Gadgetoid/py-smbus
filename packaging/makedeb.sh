@@ -3,7 +3,7 @@
 gettools="yes"
 setup="yes"
 cleanup="yes"
-pkgfiles=( "build" "changes" "deb" "dsc" "tar.xz" )
+pkgfiles=( "build" "changes" "deb" "dsc" "tar.xz" "tar.gz" )
 
 
 if [ $gettools == "yes" ]; then
@@ -20,7 +20,7 @@ fi
 cd ../library && debuild
 
 for file in ${pkgfiles[@]}; do
-    mv ../*.$file ../packaging
+    mv ../*.$file ../packaging &> /dev/null
 done
 
 if [ $cleanup == "yes" ]; then
