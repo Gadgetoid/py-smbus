@@ -4,7 +4,7 @@ Source: http://lm-sensors.org/svn/i2c-tools
 
 Files: *
 
-Copyright
+Copyright:
 
   Copyright (C) 1995-1997  Simon G. Vogl
   Copyright (C) 1998-2004 Frodo Looijaard <frodol@dds.nl>
