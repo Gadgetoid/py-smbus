@@ -7,12 +7,7 @@ build/
 dist/
 __pycache__
 .DS_Store
-*.deb
-*.dsc
-*.build
-*.changes
 *.orig.*
 *.debian.*
-packaging/*tar.xz
-library/debian/
-library/blinkt
+*.backup
+

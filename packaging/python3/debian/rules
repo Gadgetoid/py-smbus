@@ -1,0 +1,11 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+#export DH_VERBOSE=1
+export DH_OPTIONS
+
+%:
+	dh $@ --with python3 --buildsystem=python_distutils
+
+override_dh_auto_install:
+	python3 setup.py install --root debian/python3-smbus1 --install-layout=deb

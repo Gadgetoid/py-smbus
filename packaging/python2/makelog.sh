@@ -11,7 +11,7 @@ cat $mainlog > $debianlog
 
 # generate pypi changelog
 
-<< DISABLED
+<<'DISABLED'
 sed -e "/--/d" -e "s/  \*/\*/" \
     -e "s/.*\([0-9].[0-9].[0-9]\).*/\1/" \
     -e '/[0-9].[0-9].[0-9]/ a\
