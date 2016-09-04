@@ -13,6 +13,6 @@ __pycache__
 *.changes
 *.orig.*
 *.debian.*
+.backup
 packaging/*tar.xz
 library/debian/
-library/blinkt
