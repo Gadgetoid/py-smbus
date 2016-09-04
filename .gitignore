@@ -13,6 +13,6 @@ __pycache__
 *.changes
 *.orig.*
 *.debian.*
-.backup
+*.backup
 packaging/*tar.xz
 library/debian/
