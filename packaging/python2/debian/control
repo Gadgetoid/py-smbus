@@ -3,7 +3,7 @@ Maintainer: Rogue Marechal <hal@pimoroni.com>
 Homepage: http://www.lm-sensors.org
 Section: python
 Priority: optional
-Build-Depends: debhelper (>= 9.0.0), dh-python, python-dev (>= 2.6), python-setuptools
+Build-Depends: debhelper (>= 9.0.0), dh-python, python-all-dev, python-setuptools
 Standards-Version: 3.9.4
 X-Python-Version: 2.6
 
@@ -11,7 +11,6 @@ Package: python-smbus1
 Architecture: any
 Section: python
 Depends: ${python:Depends}, ${shlibs:Depends}, ${misc:Depends}
-Provides: ${python:Provides}
 Conflicts: python-smbus
 Recommends: i2c-tools
 Description: Python bindings for Linux SMBus access through i2c-dev 

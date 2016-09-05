@@ -10,7 +10,7 @@ if [ $gettools == "yes" ]; then
     sudo apt-get update
     sudo apt-get install build-essential
     sudo apt-get install debhelper devscripts
-    sudo apt-get install dh-make dh-python
+    sudo apt-get install dh-make dh-python python-all-dev
     sudo apt-get install python-dev python-setuptools
     sudo apt-get install python3-dev python3-setuptools
     sudo apt-get install gnupg i2c-tools libi2c-dev
