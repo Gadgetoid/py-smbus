@@ -4,13 +4,13 @@ Homepage: http://www.lm-sensors.org
 Section: python
 Priority: optional
 Build-Depends: debhelper (>= 9.0.0), dh-python, python3-dev (>= 3.2), python3-setuptools
-Standards-Version: 3.9.6
-X-Python3-Version: >= 3.2
+Standards-Version: 3.9.4
+X-Python3-Version: 3.2
 
 Package: python3-smbus1
 Architecture: any
 Section: python
-Depends: ${shlibs:Depends}, ${python3:Depends}, ${misc:Depends}
+Depends: ${python3:Depends}, ${shlibs:Depends}, ${misc:Depends}
 Provides: ${python3:Provides}
 Conflicts: python3-smbus
 Recommends: i2c-tools
