@@ -10,8 +10,8 @@ X-Python3-Version: >= 3.2
 Package: python3-smbus1
 Architecture: any
 Section: python
-Depends: ${shlibs:Depends}, ${python:Depends}, ${misc:Depends}
-Provides: ${python:Provides}
+Depends: ${shlibs:Depends}, ${python3:Depends}, ${misc:Depends}
+Provides: ${python3:Provides}
 Conflicts: python3-smbus
 Recommends: i2c-tools
 Description: Python 3 bindings for Linux SMBus access through i2c-dev 

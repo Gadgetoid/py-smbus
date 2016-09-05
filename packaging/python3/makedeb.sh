@@ -2,6 +2,7 @@
 
 gettools="yes"
 setup="yes"
+build="yes"
 cleanup="yes"
 pkgfiles=( "build" "changes" "deb" "dsc" "tar.xz" "tar.gz" )
 
@@ -16,11 +17,13 @@ if [ $setup == "yes" ]; then
     cp -R ./debian/ ../../library/
 fi
 
-cd ../../library && debuild
+if [ $build == "yes" ]; then
+    cd ../../library && debuild
 
-for file in ${pkgfiles[@]}; do
-    mv ../*.$file ../packaging/python3 &> /dev/null
-done
+    for file in ${pkgfiles[@]}; do
+        mv ../*.$file ../packaging/python3 &> /dev/null
+    done
+fi
 
 if [ $cleanup == "yes" ]; then
     debuild clean
