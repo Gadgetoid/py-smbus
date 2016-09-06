@@ -3,7 +3,7 @@ Maintainer: Rogue Marechal <hal@pimoroni.com>
 Homepage: http://www.lm-sensors.org
 Section: python
 Priority: optional
-Build-Depends: debhelper (>= 9.0.0), dh-python, python-all-dev, python3-setuptools
+Build-Depends: debhelper (>= 9.0.0), dh-python, python3-all-dev, python3-setuptools
 Standards-Version: 3.9.4
 X-Python3-Version: >= 3.2
 
