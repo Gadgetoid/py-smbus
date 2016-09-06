@@ -3,4 +3,4 @@ py-smbus (1.1.0+26) UNRELEASED; urgency=medium
   * Repackaged upstream sources
   * Python 2.6 build (Raspbian Wheezy)
 
- -- Rogue Marechal <hal@pimoroni.com>  Tue, 06 Sep 2016 12:00:00 +0000
+ -- Rogue Marechal <hal@pimoroni.com>  Tue, 06 Sep 2016 17:30:00 +0000
