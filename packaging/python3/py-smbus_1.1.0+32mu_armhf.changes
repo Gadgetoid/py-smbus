@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Tue, 06 Sep 2016 18:30:00 +0000
+Source: py-smbus
+Binary: python3-smbus1
+Architecture: source armhf
+Version: 1.1.0+32mu
+Distribution: UNRELEASED
+Urgency: medium
+Maintainer: Rogue Marechal <hal@pimoroni.com>
+Changed-By: Rogue Marechal <hal@pimoroni.com>
+Description: 
+ python3-smbus1 - Python 3 bindings for Linux SMBus access through i2c-dev
+Changes: 
+ py-smbus (1.1.0+32mu) UNRELEASED; urgency=medium
+ .
+   * Python 3.2mu build (Raspbian Wheezy)
+Checksums-Sha1: 
+ f239ad0d236e25d469debf3dd16932c12a3cf15a 1161 py-smbus_1.1.0+32mu.dsc
+ 625971273cbfbefaa8c11ce767eb6055c3efd5fd 6170 py-smbus_1.1.0+32mu.tar.gz
+ 4d5a4eaf14369e44df03fb9ec73ca9bb0be64096 7710 python3-smbus1_1.1.0+32mu_armhf.deb
+Checksums-Sha256: 
+ 00cab0b7002f3cb1cc86df38b01e355ccd6afbfa66e70bd2820b8925f6a1e7ea 1161 py-smbus_1.1.0+32mu.dsc
+ 3c972962f27ee6ef4ba80d83561170d9356c89161dd0e04a491f972a31a5b1ca 6170 py-smbus_1.1.0+32mu.tar.gz
+ da2554c15f7d7692691475ff6e76261b8b9cc430a6d45c8b4791ead658eacccb 7710 python3-smbus1_1.1.0+32mu_armhf.deb
+Files: 
+ 000257b3723f2be4e636309b40375350 1161 python optional py-smbus_1.1.0+32mu.dsc
+ c0206ad25d2fd500e718ee611455d3b5 6170 python optional py-smbus_1.1.0+32mu.tar.gz
+ a8d94eff7514efba63e5f14e7da62a7e 7710 python optional python3-smbus1_1.1.0+32mu_armhf.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.12 (GNU/Linux)
+
+iQEcBAEBAgAGBQJXzvzyAAoJEMAF0IhqVInw3MQH/jaV5uJOH7CQOYrvey38YPjo
+wKMZWE1GP8IR8VnUw1ZE6oSBvGTiVQsHRto4uszREmYd0hx769Jt7O2tRFonphcE
+b6yCIGY+IoMG2Qj65VzoqDl3eoSAKgL8zKvR1s3f5oiWCNEsjHLUGLGJt9ZG3VIF
+Q/vzMSd0z9VnKNHttXIaUrMLG3NfEcGMhwqilkpIfbFaqBmxPXL8kTrjn/SPf/Qx
+4KXBGIxdNkbgi2ssydOf3HjIOZutNDy+XfXir2y8bqZZiNiu8aqSATBOFte5jFlE
+Y00Z7H2sydvsigvuPt8iZHwbnW+5k8V23oz7lDDglRHyUkZxIFJHjBD3192m+sE=
+=j5JJ
+-----END PGP SIGNATURE-----
