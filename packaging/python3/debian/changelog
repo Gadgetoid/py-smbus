@@ -1,6 +1,12 @@
-py-smbus (1.1.0+26m) UNRELEASED; urgency=medium
+py-smbus (1.1.0+32mu) UNRELEASED; urgency=medium
+
+  * Python 3.2mu build (Raspbian Wheezy)
+
+ -- Rogue Marechal <hal@pimoroni.com>  Tue, 06 Sep 2016 18:30:00 +0000
+
+py-smbus (1.1.0+27) UNRELEASED; urgency=medium
 
   * Repackaged upstream sources
-  * Build for Python 2.6 on RPi2 in Raspbian Wheezy
+  * Python 2.7 build (Raspbian Wheezy)
 
- -- Rogue Marechal <hal@pimoroni.com>  Sun, 04 Sep 2016 21:30:00 +0000
+ -- Rogue Marechal <hal@pimoroni.com>  Tue, 06 Sep 2016 18:00:00 +0000
