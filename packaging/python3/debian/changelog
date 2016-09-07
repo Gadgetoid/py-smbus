@@ -1,3 +1,9 @@
+py-smbus (1.1.0+35m) UNRELEASED; urgency=medium
+
+  * Python 3.5m build (Raspbian Stretch/Sid)
+
+ -- Rogue Marechal <hal@pimoroni.com>  Wed, 07 Sep 2016 21:35:00 +0000
+
 py-smbus (1.1.0+34m) UNRELEASED; urgency=medium
 
   * Python 3.4m build (Raspbian Jessie)
