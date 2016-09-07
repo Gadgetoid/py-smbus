@@ -4,7 +4,7 @@ Homepage: http://www.lm-sensors.org
 Section: python
 Priority: optional
 Build-Depends: debhelper (>= 9.0.0), dh-python, python3-all-dev, python3-setuptools
-Standards-Version: 3.9.6
+Standards-Version: 3.9.8
 X-Python3-Version: >= 3.2
 
 Package: python3-smbus1
