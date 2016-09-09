@@ -1,6 +1,6 @@
  dpkg-buildpackage -rfakeroot -D -us -uc
 dpkg-buildpackage: source package py-smbus
-dpkg-buildpackage: source version 1.1.0+27
+dpkg-buildpackage: source version 1.1+27
 dpkg-buildpackage: source changed by Rogue Marechal <hal@pimoroni.com>
  dpkg-source --before-build library
 dpkg-buildpackage: host architecture armhf
@@ -17,8 +17,8 @@ running clean
  dpkg-source -b library
 dpkg-source: info: using options from library/debian/source/options: --extend-diff-ignore=^[^/]+\.egg-info/
 dpkg-source: info: using source format `3.0 (native)'
-dpkg-source: info: building py-smbus in py-smbus_1.1.0+27.tar.gz
-dpkg-source: info: building py-smbus in py-smbus_1.1.0+27.dsc
+dpkg-source: info: building py-smbus in py-smbus_1.1+27.tar.gz
+dpkg-source: info: building py-smbus in py-smbus_1.1+27.dsc
  debian/rules build
 dh build --with python2 --buildsystem=python_distutils
    dh_testdir -O--buildsystem=python_distutils
@@ -96,8 +96,8 @@ dpkg-gencontrol: warning: package python-smbus1: unused substitution variable ${
 dpkg-gencontrol: warning: package python-smbus1: unused substitution variable ${python:Provides}
    dh_md5sums -O--buildsystem=python_distutils
    dh_builddeb -O--buildsystem=python_distutils
-dpkg-deb: building package `python-smbus1' in `../python-smbus1_1.1.0+27_armhf.deb'.
- dpkg-genchanges  >../py-smbus_1.1.0+27_armhf.changes
+dpkg-deb: building package `python-smbus1' in `../python-smbus1_1.1+27_armhf.deb'.
+ dpkg-genchanges  >../py-smbus_1.1+27_armhf.changes
 dpkg-genchanges: including full source code in upload
  dpkg-source --after-build library
 dpkg-source: info: using options from library/debian/source/options: --extend-diff-ignore=^[^/]+\.egg-info/
@@ -105,8 +105,8 @@ dpkg-buildpackage: full upload; Debian-native package (full source is included)
 Now running lintian...
 Finished running lintian.
 Now signing changes and any dsc files...
- signfile py-smbus_1.1.0+27.dsc Rogue Marechal <hal@pimoroni.com>
+ signfile py-smbus_1.1+27.dsc Rogue Marechal <hal@pimoroni.com>
 
- signfile py-smbus_1.1.0+27_armhf.changes Rogue Marechal <hal@pimoroni.com>
+ signfile py-smbus_1.1+27_armhf.changes Rogue Marechal <hal@pimoroni.com>
 
 Successfully signed dsc and changes files
