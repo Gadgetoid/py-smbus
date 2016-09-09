@@ -1,0 +1,46 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Fri, 09 Sep 2016 15:15:00 +0000
+Source: py-smbus
+Binary: python3-smbus1
+Architecture: source armhf
+Version: 1.1+32mu-1
+Distribution: UNRELEASED
+Urgency: medium
+Maintainer: Rogue Marechal <hal@pimoroni.com>
+Changed-By: Rogue Marechal <hal@pimoroni.com>
+Description: 
+ python3-smbus1 - Python 3 bindings for Linux SMBus access through i2c-dev
+Changes: 
+ py-smbus (1.1+32mu-1) UNRELEASED; urgency=medium
+ .
+   * Python 3.2mu build (Raspbian Wheezy)
+Checksums-Sha1: 
+ bab4503f140e447624507c6d7870636f3e9cb8c8 1425 py-smbus_1.1+32mu-1.dsc
+ 0324e827d5cccf71fc63cf6c1666c1ff436ff8b5 5238 py-smbus_1.1+32mu.orig.tar.gz
+ 32205f401ca2a0ac8b0d4347a2d3ced348c58ef1 1908 py-smbus_1.1+32mu-1.debian.tar.gz
+ 77c16e784f2aec765f854ed36bbc15e5708dd498 7706 python3-smbus1_1.1+32mu-1_armhf.deb
+Checksums-Sha256: 
+ 023c7a35a63ce4cc0ed2f70eaebe3252948ba423981e42959e432befa63d9090 1425 py-smbus_1.1+32mu-1.dsc
+ cb838e55456e22c99f9d3541faffdf6290c0dfde60a9237dc1edf6f9d4e42d03 5238 py-smbus_1.1+32mu.orig.tar.gz
+ 053320648c198189b8c6c72575b8ab8dbad5692404ba56969e4039517d251320 1908 py-smbus_1.1+32mu-1.debian.tar.gz
+ 6507eaa0e50a9974668d09c879c1300ffda10f122fe593eaaf65d501251550f5 7706 python3-smbus1_1.1+32mu-1_armhf.deb
+Files: 
+ 185f252661225e556f7bd8d357f58fad 1425 python extra py-smbus_1.1+32mu-1.dsc
+ f03c32f33c9a5883013292a9e6e675bb 5238 python extra py-smbus_1.1+32mu.orig.tar.gz
+ 2fed22acc6981ba7393710996ef72c70 1908 python extra py-smbus_1.1+32mu-1.debian.tar.gz
+ 8ea1a87edad729df5f76077c44669e8c 7706 python extra python3-smbus1_1.1+32mu-1_armhf.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.12 (GNU/Linux)
+
+iQEcBAEBAgAGBQJX0sRJAAoJEMAF0IhqVInwB78IAIGqcHbq9dI+61fRrlFi8StF
+7poMP4kNZq7ReLOX3eOqE9EOupiUahQCz8oIaXfFLhXpe9BgnkCDg0BWb2mTHfUF
+lQLlGlAJc6q55wHwzKdknf7RO6FuDhm3yBcsm6qrMuSby54GUPdok3EV9VvdmNoW
+p2OHFc8vCfNP3lD+OsHANhKvbP8eBQkQuiAVwBF9k9N3tYHjNyyCVmzLQcHXRveF
+8M/1rUJkKfw5tO5moY06UVbz9aDAzHRH0Dun66W4G7Tbp5EmbkHmAIZsmatJj2Ux
+dokqTrgyGkbBSk31SeFbLYTOVROe4jhI21GZrpUYY2tD/GZtIRqev3F2Y2b8jZ4=
+=qcrv
+-----END PGP SIGNATURE-----
