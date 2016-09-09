@@ -1,0 +1,46 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Fri, 09 Sep 2016 15:30:00 +0000
+Source: py-smbus
+Binary: python3-smbus1
+Architecture: source armhf
+Version: 1.1+34m-1
+Distribution: UNRELEASED
+Urgency: medium
+Maintainer: Rogue Marechal <hal@pimoroni.com>
+Changed-By: Rogue Marechal <hal@pimoroni.com>
+Description:
+ python3-smbus1 - Python 3 bindings for Linux SMBus access through i2c-dev
+Changes:
+ py-smbus (1.1+34m-1) UNRELEASED; urgency=medium
+ .
+   * Python 3.4m build (Raspbian Jessie)
+Checksums-Sha1:
+ 64519fe45c95205f2b13dd0b93a8b6dbeab3b769 1406 py-smbus_1.1+34m-1.dsc
+ 0324e827d5cccf71fc63cf6c1666c1ff436ff8b5 5238 py-smbus_1.1+34m.orig.tar.gz
+ b790bc7711beda71f15aa29b88c53714f81bba7f 1932 py-smbus_1.1+34m-1.debian.tar.xz
+ 32ffd731cd85d31dbbeb3b2bd9ce417818dc6ea6 6802 python3-smbus1_1.1+34m-1_armhf.deb
+Checksums-Sha256:
+ 509a72808a286ba63644574bc8cf410a1907f05cdf4b0e318cce51197c1186cb 1406 py-smbus_1.1+34m-1.dsc
+ cb838e55456e22c99f9d3541faffdf6290c0dfde60a9237dc1edf6f9d4e42d03 5238 py-smbus_1.1+34m.orig.tar.gz
+ f3723b858dbf40068d1f20f44e2ec5dcd867daa22f789d5ad6c54d3c95ebb485 1932 py-smbus_1.1+34m-1.debian.tar.xz
+ fdb2e78f567e19347a954fb6a9a5f8ae80de368862d6670b2aaa855f25e0dec3 6802 python3-smbus1_1.1+34m-1_armhf.deb
+Files:
+ f417a939dc4eb7d73e0a948a00299ee4 1406 python extra py-smbus_1.1+34m-1.dsc
+ f03c32f33c9a5883013292a9e6e675bb 5238 python extra py-smbus_1.1+34m.orig.tar.gz
+ cb1b730b1b60bcb16c24c59c87a9c7ed 1932 python extra py-smbus_1.1+34m-1.debian.tar.xz
+ 581c00e80c0631066969d1d23bafe843 6802 python extra python3-smbus1_1.1+34m-1_armhf.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJX0sfBAAoJEMAF0IhqVInwvvkH/jnPhu79yw8BNUwjKW51TG+A
+/9vq2/B9+ilEhQ4PetTqxGJy81bl2JfbmkgJwD7YcyL6iNP6VXWezZ6ImZMEmR1k
+Po84GoutRMzuZZ2iqfTdS4U7QCbD9+V/At2NSRfk9RF2MzF4U8pGQHytcGnvKCk8
+u4MR/HYzWBvgo/ACAFflxu/ylSTKhZq/xpZPrGw8NwSQ0qGhHHU0H7Oocor7999N
+RXE4t2t7O7Bp4QiBfGPvgt+6ELzbyG15dzH1NECyEys4GvW4GsfknlSftwCl1Z6i
+cXL98Lcj3w0nbVg6mFAFtCTWC8RyvRMoHxYWhxxQcEvB+txe4OsEKITF42OiTq8=
+=TL0y
+-----END PGP SIGNATURE-----

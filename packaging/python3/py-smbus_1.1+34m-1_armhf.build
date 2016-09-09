@@ -1,10 +1,10 @@
  dpkg-buildpackage -rfakeroot -D -us -uc
-dpkg-buildpackage: info: source package py-smbus
-dpkg-buildpackage: info: source version 1.1+35dbg
-dpkg-buildpackage: info: source distribution UNRELEASED
-dpkg-buildpackage: info: source changed by Rogue Marechal <hal@pimoroni.com>
+dpkg-buildpackage: source package py-smbus
+dpkg-buildpackage: source version 1.1+34m-1
+dpkg-buildpackage: source distribution UNRELEASED
+dpkg-buildpackage: source changed by Rogue Marechal <hal@pimoroni.com>
  dpkg-source --before-build library
-dpkg-buildpackage: info: host architecture armhf
+dpkg-buildpackage: host architecture armhf
 dpkg-source: info: using options from library/debian/source/options: --extend-diff-ignore=^[^/]+\.egg-info/
  fakeroot debian/rules clean
 dh clean --with python3 --buildsystem=python_distutils
@@ -12,35 +12,33 @@ dh clean --with python3 --buildsystem=python_distutils
    dh_auto_clean -O--buildsystem=python_distutils
 pyversions: missing X(S)-Python-Version in control file, fall back to debian/pyversions
 pyversions: missing debian/pyversions file, fall back to supported versions
-	python setup.py clean -a
 running clean
 'build/lib.linux-armv7l-2.7' does not exist -- can't clean it
 'build/bdist.linux-armv7l' does not exist -- can't clean it
 'build/scripts-2.7' does not exist -- can't clean it
-	find . -name \*.pyc -exec rm {} \+
    dh_clean -O--buildsystem=python_distutils
  dpkg-source -b library
 dpkg-source: info: using options from library/debian/source/options: --extend-diff-ignore=^[^/]+\.egg-info/
-dpkg-source: info: using source format '3.0 (native)'
-dpkg-source: info: building py-smbus in py-smbus_1.1+35dbg.tar.xz
-dpkg-source: info: building py-smbus in py-smbus_1.1+35dbg.dsc
+dpkg-source: info: using source format `3.0 (quilt)'
+dpkg-source: info: building py-smbus using existing ./py-smbus_1.1+34m.orig.tar.gz
+dpkg-source: warning: ignoring deletion of file README, use --include-removal to override
+dpkg-source: info: building py-smbus in py-smbus_1.1+34m-1.debian.tar.xz
+dpkg-source: info: building py-smbus in py-smbus_1.1+34m-1.dsc
  debian/rules build
 dh build --with python3 --buildsystem=python_distutils
    dh_testdir -O--buildsystem=python_distutils
-   dh_update_autotools_config -O--buildsystem=python_distutils
    dh_auto_configure -O--buildsystem=python_distutils
    dh_auto_build -O--buildsystem=python_distutils
 pyversions: missing X(S)-Python-Version in control file, fall back to debian/pyversions
 pyversions: missing debian/pyversions file, fall back to supported versions
-	python setup.py build --force
 running build
 running build_ext
 building 'smbus' extension
 creating build
 creating build/temp.linux-armv7l-2.7
-arm-linux-gnueabihf-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fno-strict-aliasing -g -O2 -fdebug-prefix-map=/home/pi/GitHub/py-smbus/library=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -I/usr/include/python2.7 -c smbusmodule.c -o build/temp.linux-armv7l-2.7/smbusmodule.o
+arm-linux-gnueabihf-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -fno-strict-aliasing -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fPIC -I/usr/include/python2.7 -c smbusmodule.c -o build/temp.linux-armv7l-2.7/smbusmodule.o
 creating build/lib.linux-armv7l-2.7
-arm-linux-gnueabihf-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-z,relro -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -Wdate-time -D_FORTIFY_SOURCE=2 -g -fdebug-prefix-map=/build/python2.7-Ov5cuR/python2.7-2.7.12=. -fstack-protector-strong -Wformat -Werror=format-security -Wl,-z,relro -g -O2 -fdebug-prefix-map=/home/pi/GitHub/py-smbus/library=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-armv7l-2.7/smbusmodule.o -o build/lib.linux-armv7l-2.7/smbus.so
+arm-linux-gnueabihf-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-z,relro -fno-strict-aliasing -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -D_FORTIFY_SOURCE=2 -g -fstack-protector-strong -Wformat -Werror=format-security -Wl,-z,relro -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 build/temp.linux-armv7l-2.7/smbusmodule.o -o build/lib.linux-armv7l-2.7/smbus.so
    dh_auto_test -O--buildsystem=python_distutils
  fakeroot debian/rules binary
 dh binary --with python3 --buildsystem=python_distutils
@@ -53,17 +51,18 @@ running install
 running build
 running build_ext
 building 'smbus' extension
-creating build/temp.linux-armv7l-3.5
-arm-linux-gnueabihf-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -g -O2 -fdebug-prefix-map=/home/pi/GitHub/py-smbus/library=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 -fPIC -I/usr/include/python3.5m -c smbusmodule.c -o build/temp.linux-armv7l-3.5/smbusmodule.o
-creating build/lib.linux-armv7l-3.5
-arm-linux-gnueabihf-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,relro -g -O2 -fdebug-prefix-map=/home/pi/GitHub/py-smbus/library=. -fstack-protector-strong -Wformat -Werror=format-security -Wdate-time -D_FORTIFY_SOURCE=2 build/temp.linux-armv7l-3.5/smbusmodule.o -o build/lib.linux-armv7l-3.5/smbus.cpython-35m-arm-linux-gnueabihf.so
+creating build/temp.linux-armv7l-3.4
+arm-linux-gnueabihf-gcc -pthread -DNDEBUG -g -fwrapv -O2 -Wall -Wstrict-prototypes -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 -fPIC -I/usr/include/python3.4m -c smbusmodule.c -o build/temp.linux-armv7l-3.4/smbusmodule.o
+creating build/lib.linux-armv7l-3.4
+arm-linux-gnueabihf-gcc -pthread -shared -Wl,-O1 -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,-z,relro -g -O2 -fstack-protector-strong -Wformat -Werror=format-security -D_FORTIFY_SOURCE=2 build/temp.linux-armv7l-3.4/smbusmodule.o -o build/lib.linux-armv7l-3.4/smbus.cpython-34m.so
 running install_lib
 creating debian/python3-smbus1
 creating debian/python3-smbus1/usr
 creating debian/python3-smbus1/usr/lib
 creating debian/python3-smbus1/usr/lib/python3
 creating debian/python3-smbus1/usr/lib/python3/dist-packages
-copying build/lib.linux-armv7l-3.5/smbus.cpython-35m-arm-linux-gnueabihf.so -> debian/python3-smbus1/usr/lib/python3/dist-packages
+renaming extension smbus.cpython-34m.so -> smbus.cpython-34m-arm-linux-gnueabihf.so
+copying build/lib.linux-armv7l-3.4/smbus.cpython-34m.so -> debian/python3-smbus1/usr/lib/python3/dist-packages/smbus.cpython-34m-arm-linux-gnueabihf.so
 running install_egg_info
 Writing debian/python3-smbus1/usr/lib/python3/dist-packages/smbus-1.1.egg-info
 make[1]: Leaving directory '/home/pi/GitHub/py-smbus/library'
@@ -72,7 +71,6 @@ make[1]: Leaving directory '/home/pi/GitHub/py-smbus/library'
    dh_python3 -O--buildsystem=python_distutils
    dh_perl -O--buildsystem=python_distutils
    dh_link -O--buildsystem=python_distutils
-   dh_strip_nondeterminism -O--buildsystem=python_distutils
    dh_compress -O--buildsystem=python_distutils
    dh_fixperms -O--buildsystem=python_distutils
    dh_strip -O--buildsystem=python_distutils
@@ -82,22 +80,19 @@ make[1]: Leaving directory '/home/pi/GitHub/py-smbus/library'
    dh_gencontrol -O--buildsystem=python_distutils
 dpkg-gencontrol: warning: package python3-smbus1: unused substitution variable ${python3:Versions}
 dpkg-gencontrol: warning: package python3-smbus1: unused substitution variable ${python3:Provides}
-dpkg-gencontrol: warning: package python3-smbus1: unused substitution variable ${python3:Provides}
-dpkg-gencontrol: warning: package python3-smbus1: unused substitution variable ${python3:Versions}
    dh_md5sums -O--buildsystem=python_distutils
    dh_builddeb -O--buildsystem=python_distutils
-dpkg-deb: building package 'python3-smbus1-dbgsym' in '../python3-smbus1-dbgsym_1.1+35dbg_armhf.deb'.
-dpkg-deb: building package 'python3-smbus1' in '../python3-smbus1_1.1+35dbg_armhf.deb'.
- dpkg-genchanges  >../py-smbus_1.1+35dbg_armhf.changes
-dpkg-genchanges: info: including full source code in upload
+dpkg-deb: building package `python3-smbus1' in `../python3-smbus1_1.1+34m-1_armhf.deb'.
+ dpkg-genchanges  >../py-smbus_1.1+34m-1_armhf.changes
+dpkg-genchanges: including full source code in upload
  dpkg-source --after-build library
 dpkg-source: info: using options from library/debian/source/options: --extend-diff-ignore=^[^/]+\.egg-info/
-dpkg-buildpackage: info: full upload; Debian-native package (full source is included)
+dpkg-buildpackage: full upload (original source is included)
 Now running lintian...
 Finished running lintian.
 Now signing changes and any dsc files...
- signfile py-smbus_1.1+35dbg.dsc Rogue Marechal <hal@pimoroni.com>
+ signfile py-smbus_1.1+34m-1.dsc Rogue Marechal <hal@pimoroni.com>
 
- signfile py-smbus_1.1+35dbg_armhf.changes Rogue Marechal <hal@pimoroni.com>
+ signfile py-smbus_1.1+34m-1_armhf.changes Rogue Marechal <hal@pimoroni.com>
 
 Successfully signed dsc and changes files

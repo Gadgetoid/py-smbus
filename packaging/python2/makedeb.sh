@@ -4,6 +4,7 @@ gettools="yes"
 setup="yes"
 build="yes"
 cleanup="yes"
+origtar="py-smbus_1.1+27.orig.tar.gz"
 pkgfiles=( "build" "changes" "deb" "dsc" "tar.xz" "tar.gz" )
 
 if [ $gettools == "yes" ]; then
@@ -19,6 +20,7 @@ fi
 if [ $setup == "yes" ]; then
     rm -R ../../library/build ../../library/debian &> /dev/null
     cp -R ./debian/ ../../library/
+    cp -R ./$origtar ../../
 fi
 
 if [ $build == "yes" ]; then
