@@ -1,0 +1,46 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Fri, 09 Sep 2016 14:00:00 +0000
+Source: py-smbus
+Binary: python3-smbus1
+Architecture: source armhf
+Version: 1.1+35dbg
+Distribution: UNRELEASED
+Urgency: medium
+Maintainer: Rogue Marechal <hal@pimoroni.com>
+Changed-By: Rogue Marechal <hal@pimoroni.com>
+Description:
+ python3-smbus1 - Python 3 bindings for Linux SMBus access through i2c-dev
+Changes:
+ py-smbus (1.1+35dbg) UNRELEASED; urgency=medium
+ .
+   * Python 3.5dbg build (Raspbian Stretch/Sid)
+Checksums-Sha1:
+ 3c3090f22cc6da2b335b0e920e429ee1ef70330a 1142 py-smbus_1.1+35dbg.dsc
+ 72cb8a83dc8cb0d2e22d0edcde696020154188f9 5932 py-smbus_1.1+35dbg.tar.xz
+ b71212a5fa059bacf59476f494096fb8ee3b42ef 20292 python3-smbus1-dbgsym_1.1+35dbg_armhf.deb
+ 751ded5164d3dd2cf64dda7afb2b5cdddc3203f5 6848 python3-smbus1_1.1+35dbg_armhf.deb
+Checksums-Sha256:
+ 02da439923de9e03916a38934072bdeabd01a7a96d7d524707ce0586c991108f 1142 py-smbus_1.1+35dbg.dsc
+ 9eac0779cc7f53341c12e76e67443d7329269ecf9f0a85592417b35d8d07c948 5932 py-smbus_1.1+35dbg.tar.xz
+ 9fe034431ed9d523c9b87552b1d018c4c5ae8c4d28b5d05c156bcf614410fa51 20292 python3-smbus1-dbgsym_1.1+35dbg_armhf.deb
+ 0cc528cd2a697068a1fbe1810ea76f94805e763e0ec18187ff9cc0214eb12669 6848 python3-smbus1_1.1+35dbg_armhf.deb
+Files:
+ 70c711113b26cc1c53ba1d3e4f562ec0 1142 python extra py-smbus_1.1+35dbg.dsc
+ d594681ad6cd1a5024f1497d56724373 5932 python extra py-smbus_1.1+35dbg.tar.xz
+ a92a9ca85e26cb22ed3bd591da853993 20292 debug extra python3-smbus1-dbgsym_1.1+35dbg_armhf.deb
+ 797a42aacd71d97405dc1a322546b398 6848 python extra python3-smbus1_1.1+35dbg_armhf.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJX0rJkAAoJEMAF0IhqVInwFBMIAJsmnRwYZ+a6AoLfK39WTkFG
+o7ME1aBp9xbxMort2Cw2wusyJwcdoyP0VE7pICOnZhSn10dF++2Qce3ZqlduEEjN
+aFhgkbWU0gLeEG4yYUzauZm9wxYRwHSFI2RsazkoFZgrj5/QE7g0j7B/KPT9C1xJ
+Nsb3SPcLzcL+GP6Z3z7LYqSZx8dCaULkMwO7xP0/TJVGRRQCpE6ojTUF+3VqcPt4
+WPgzkAR981TP51OlHKvvfG9eEh+b+eio8gz3I0eRqpEcYRcErRv5rVzuF/hxvs1y
+dYzN7FpXQdH8AvkrfzIp54yI/XSc9U2oGvP/S0BStVkbXQXCLm7C07ZcwuIVX8Y=
+=Se0t
+-----END PGP SIGNATURE-----
