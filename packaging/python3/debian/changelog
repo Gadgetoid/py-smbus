@@ -1,24 +1,24 @@
-py-smbus (1.1.0+35dbg) UNRELEASED; urgency=medium
+py-smbus (1.1+35dbg) UNRELEASED; urgency=medium
 
   * Python 3.5dbg build (Raspbian Stretch/Sid)
 
- -- Rogue Marechal <hal@pimoroni.com>  Wed, 07 Sep 2016 22:35:00 +0000
+ -- Rogue Marechal <hal@pimoroni.com>  Fri, 09 Sep 2016 13:45:00 +0000
 
-py-smbus (1.1.0+34m) UNRELEASED; urgency=medium
+py-smbus (1.1+34m) UNRELEASED; urgency=medium
 
   * Python 3.4m build (Raspbian Jessie)
 
- -- Rogue Marechal <hal@pimoroni.com>  Wed, 07 Sep 2016 21:35:00 +0000
+ -- Rogue Marechal <hal@pimoroni.com>  Fri, 09 Sep 2016 13:30:00 +0000
 
-py-smbus (1.1.0+32mu) UNRELEASED; urgency=medium
+py-smbus (1.1+32mu) UNRELEASED; urgency=medium
 
   * Python 3.2mu build (Raspbian Wheezy)
 
- -- Rogue Marechal <hal@pimoroni.com>  Tue, 06 Sep 2016 18:30:00 +0000
+ -- Rogue Marechal <hal@pimoroni.com>  Fri, 09 Sep 2016 13:15:00 +0000
 
-py-smbus (1.1.0+27) UNRELEASED; urgency=medium
+py-smbus (1.1+27) UNRELEASED; urgency=medium
 
   * Repackaged upstream sources
   * Python 2.7 build (Raspbian Wheezy)
 
- -- Rogue Marechal <hal@pimoroni.com>  Tue, 06 Sep 2016 18:00:00 +0000
+ -- Rogue Marechal <hal@pimoroni.com>  Fri, 09 Sep 2016 13:00:00 +0000

@@ -1,6 +1,6 @@
-py-smbus (1.1.0+27) UNRELEASED; urgency=medium
+py-smbus (1.1+27) UNRELEASED; urgency=medium
 
   * Repackaged upstream sources
   * Python 2.7 build (Raspbian Wheezy)
 
- -- Rogue Marechal <hal@pimoroni.com>  Tue, 06 Sep 2016 18:00:00 +0000
+ -- Rogue Marechal <hal@pimoroni.com>  Fri, 09 Sep 2016 13:00:00 +0000
