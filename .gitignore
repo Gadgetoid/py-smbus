@@ -7,7 +7,4 @@ build/
 dist/
 __pycache__
 .DS_Store
-*.orig.*
-*.debian.*
 *.backup
-
