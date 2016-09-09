@@ -4,7 +4,7 @@ gettools="yes"
 setup="yes"
 build="yes"
 cleanup="yes"
-origtar="py-smbus_1.1+34m.orig.tar.gz"
+origtar="py-smbus_1.1+35dbg.orig.tar.gz"
 pkgfiles=( "build" "changes" "deb" "dsc" "tar.xz" "tar.gz" )
 
 if [ $gettools == "yes" ]; then

@@ -1,6 +1,6 @@
  dpkg-buildpackage -rfakeroot -D -us -uc
 dpkg-buildpackage: info: source package py-smbus
-dpkg-buildpackage: info: source version 1.1+35dbg
+dpkg-buildpackage: info: source version 1.1+35dbg-1
 dpkg-buildpackage: info: source distribution UNRELEASED
 dpkg-buildpackage: info: source changed by Rogue Marechal <hal@pimoroni.com>
  dpkg-source --before-build library
@@ -21,9 +21,11 @@ running clean
    dh_clean -O--buildsystem=python_distutils
  dpkg-source -b library
 dpkg-source: info: using options from library/debian/source/options: --extend-diff-ignore=^[^/]+\.egg-info/
-dpkg-source: info: using source format '3.0 (native)'
-dpkg-source: info: building py-smbus in py-smbus_1.1+35dbg.tar.xz
-dpkg-source: info: building py-smbus in py-smbus_1.1+35dbg.dsc
+dpkg-source: info: using source format '3.0 (quilt)'
+dpkg-source: info: building py-smbus using existing ./py-smbus_1.1+35dbg.orig.tar.gz
+dpkg-source: warning: ignoring deletion of file README, use --include-removal to override
+dpkg-source: info: building py-smbus in py-smbus_1.1+35dbg-1.debian.tar.xz
+dpkg-source: info: building py-smbus in py-smbus_1.1+35dbg-1.dsc
  debian/rules build
 dh build --with python3 --buildsystem=python_distutils
    dh_testdir -O--buildsystem=python_distutils
@@ -82,22 +84,22 @@ make[1]: Leaving directory '/home/pi/GitHub/py-smbus/library'
    dh_gencontrol -O--buildsystem=python_distutils
 dpkg-gencontrol: warning: package python3-smbus1: unused substitution variable ${python3:Versions}
 dpkg-gencontrol: warning: package python3-smbus1: unused substitution variable ${python3:Provides}
-dpkg-gencontrol: warning: package python3-smbus1: unused substitution variable ${python3:Provides}
 dpkg-gencontrol: warning: package python3-smbus1: unused substitution variable ${python3:Versions}
+dpkg-gencontrol: warning: package python3-smbus1: unused substitution variable ${python3:Provides}
    dh_md5sums -O--buildsystem=python_distutils
    dh_builddeb -O--buildsystem=python_distutils
-dpkg-deb: building package 'python3-smbus1-dbgsym' in '../python3-smbus1-dbgsym_1.1+35dbg_armhf.deb'.
-dpkg-deb: building package 'python3-smbus1' in '../python3-smbus1_1.1+35dbg_armhf.deb'.
- dpkg-genchanges  >../py-smbus_1.1+35dbg_armhf.changes
+dpkg-deb: building package 'python3-smbus1-dbgsym' in '../python3-smbus1-dbgsym_1.1+35dbg-1_armhf.deb'.
+dpkg-deb: building package 'python3-smbus1' in '../python3-smbus1_1.1+35dbg-1_armhf.deb'.
+ dpkg-genchanges  >../py-smbus_1.1+35dbg-1_armhf.changes
 dpkg-genchanges: info: including full source code in upload
  dpkg-source --after-build library
 dpkg-source: info: using options from library/debian/source/options: --extend-diff-ignore=^[^/]+\.egg-info/
-dpkg-buildpackage: info: full upload; Debian-native package (full source is included)
+dpkg-buildpackage: info: full upload (original source is included)
 Now running lintian...
 Finished running lintian.
 Now signing changes and any dsc files...
- signfile py-smbus_1.1+35dbg.dsc Rogue Marechal <hal@pimoroni.com>
+ signfile py-smbus_1.1+35dbg-1.dsc Rogue Marechal <hal@pimoroni.com>
 
- signfile py-smbus_1.1+35dbg_armhf.changes Rogue Marechal <hal@pimoroni.com>
+ signfile py-smbus_1.1+35dbg-1_armhf.changes Rogue Marechal <hal@pimoroni.com>
 
 Successfully signed dsc and changes files
